@@ -24,9 +24,12 @@ setup(name='drupal.deployment.templates',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
+          'paste.script',
       ],
       entry_points="""
       # -*- Entry points: -*-
       """,
+          'paste.paster_create_template': [
+              
+          ]
       )
