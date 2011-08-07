@@ -9,7 +9,15 @@ quickly see, understand and experiment it.
 Install
 *******
 
+Check requirements:
+
+* Python. The package has been developed with Python 2.6, but should work with
+  some other versions.
+
 Get the source and cd to the demo/ folder.
+If your don't have git installed, look at downloads at
+https://github.com/benoitbryon/drupal-deployment-templates.
+:: 
 
   git clone https://github.com/benoitbryon/drupal-deployment-templates
   cd drupal-deployment-templates/demo/
