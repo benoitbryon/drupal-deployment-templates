@@ -40,12 +40,18 @@ You can now run the demo:
 The drupal-deployment-templates defines several templates:
 
 * drupal_directory_layout
+* drupal_apache2_conf
 
 As an example, if you want to create a directory layout in the OUTPUT/DIRECTORY
 path:
 ::
 
   bin/paster create -t drupal_directory_layout OUTPUT/DIRECTORY
+
+Then generate an Apache2 configuration file in OUTPUT/DIRECTORY/etc/:
+::
+
+  bin/paster create -t drupal_apache2_conf OUTPUT/DIRECTORY/etc/
 
 ***************************************
 Demo is part of the development process

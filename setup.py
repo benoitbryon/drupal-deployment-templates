@@ -30,5 +30,6 @@ setup(name='drupal.deployment.templates',
       entry_points="""
       [paste.paster_create_template]
       drupal_directory_layout = drupal.deployment.templates.directorylayout:DrupalDirectoryLayoutTemplate
+      drupal_apache2_conf = drupal.deployment.templates.apache2conf:DrupalApache2ConfTemplate
       """,
       )

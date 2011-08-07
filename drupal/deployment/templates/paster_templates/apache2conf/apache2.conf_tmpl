@@ -35,17 +35,10 @@
   # * upload_max_filesize is lower than server's available memory
   # * upload_max_filesize is lower than or equals memory_limit
   
-  ServerName ${servername}
-  #ServerAlias 
+  ServerName ${server_name}
+  ServerAlias  ${server_alias}
   DocumentRoot ${project_root}/www
   LogLevel warn
-
-#  <IfModule mod_rewrite.c>
-#    RewriteEngine on
-#    RewriteCond %{SCRIPT_FILENAME} index.php [NC]
-#    RewriteCond %{QUERY_STRING} (^|&)q=admin(/|&|$) [NC]
-#    RewriteRule .* - [F,L]
-#  </IfModule> 
 
   ErrorLog ${project_root}/var/log/access.log
   CustomLog ${project_root}/var/log/access.log combined
@@ -67,9 +60,10 @@
     # one.
     # 
     # Notices:
+    # 
     # * php_admin_* directives cannot be overriden in .htaccess or with 
     #   ini_set()
-    # * use php_*flag rather than php_*value for booleans
+    # * use php_*_flag rather than php_*_value for booleans
 
     # PATHS
     php_admin_value doc_root                    "${project_root}/www"
