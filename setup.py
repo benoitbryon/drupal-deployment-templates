@@ -24,12 +24,11 @@ setup(name='drupal.deployment.templates',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'paste.script',
+          'PasteScript',
+          'Cheetah',
       ],
       entry_points="""
-      # -*- Entry points: -*-
+      [paste.paster_create_template]
+      drupal_directory_layout = drupal.deployment.templates.directorylayout:DrupalDirectoryLayoutTemplate
       """,
-          'paste.paster_create_template': [
-              
-          ]
       )

@@ -1,9 +1,10 @@
-from paste.script import templates
+from paste.script.templates import var
+
+from base import BaseTemplate
 
 
-class DirectoryLayoutTemplate(templates.Template):
-    """Directory layout template: create directories like bin, var, www,
-    etc..."""
-    def template_dir(self):
-        return 'paster_templates/directorylayout'
-    
+class DrupalDirectoryLayoutTemplate(BaseTemplate):
+    """Template class to produce a directory layout: bin, var, etc..."""
+    _template_dir = 'paster_templates/directorylayout'
+    summary = "Directory layout to receive a Drupal deployment."
+    use_cheetah = True

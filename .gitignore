@@ -1,9 +1,9 @@
 # Virtualenv's directories
-bin
-include
-lib
-share
-src
+demo/bin
+demo/include
+demo/lib
+demo/share
+demo/src
 # Buildout's directories
 demo/bin
 demo/develop-eggs
